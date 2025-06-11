@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 int* twoSum(int* t, int n, int x, int* r) {
-    for (int i = 0; i <= n; i++) {
+    for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) {
             if (t[i] + t[j] == x) {
                 int* res = (int*)malloc(2 * sizeof(int));
