@@ -1,5 +1,8 @@
 #include <stdlib.h>
 
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
 int* twoSum(int* t, int n, int x, int* r) {
     for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) {
